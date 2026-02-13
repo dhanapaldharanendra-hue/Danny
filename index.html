@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Special Question</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            font-family: 'Arial', sans-serif;
+        }
+        .container {
+            text-align: center;
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+        }
+        h1 {
+            color: #333;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+        p {
+            color: #666;
+            font-size: 1.2em;
+            margin-bottom: 30px;
+        }
+        .buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+        }
+        button {
+            padding: 12px 30px;
+            font-size: 1.1em;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+        .yes-btn {
+            background-color: #667eea;
+            color: white;
+        }
+        .yes-btn:hover {
+            transform: scale(1.05);
+        }
+        .no-btn {
+            background-color: #ccc;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>💝 Will you be mine? 💝</h1>
+        <p>You mean the world to me. Will you share your life with me?</p>
+        <div class="buttons">
+            <button class="yes-btn" onclick="celebrate()">Yes! 🎉</button>
+            <button class="no-btn" onclick="tryAgain()">Ask again</button>
+        </div>
+    </div>
+
+    <script>
+        function celebrate() {
+            alert('You made me the happiest person! 💕');
+        }
+        function tryAgain() {
+            alert('Maybe ask again later! 😊');
+        }
+    </script>
+</body>
+</html>
